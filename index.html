@@ -219,45 +219,50 @@
       <!-- Games -->
       <div class="games" id="gamesList">
 
-        <!-- Oyunlar -->
-        <div class="game" data-link="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20olympgold&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F
-">
+        <!-- Game 1 -->
+        <div class="game" onclick="window.open('https://bahisbu260.com/tr/game/pragmatic/gates-of-olympus-super-scatter?demo=true', '_blank')">
           <img src="https://i.imgur.com/Vg6OJU9.png" alt="Gates of Olympus Super Scatter" />
           <div class="game-title">Gates of Olympus Super Scatter</div>
         </div>
 
-        <div class="game" data-link="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs12trpcnhour&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F">
+        <!-- Game 2 -->
+        <div class="game" onclick="window.open('https://bahisbu260.com/tr/game/pragmatic/club-tropicana?demo=true', '_blank')">
           <img src="https://i.imgur.com/XzTu60o.png" alt="Club Tropicana - Happy Hour" />
           <div class="game-title">Club Tropicana - Happy Hour</div>
         </div>
 
-        <div class="game" data-link="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25goldpartya&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F
-">
+        <!-- Game 3 -->
+        <div class="game" onclick="window.open('https://bahisbu260.com/tr/game/pragmatic/gold-party-2-after-hours?demo=true', '_blank')">
           <img src="https://i.imgur.com/UilKjXi.png" alt="Gold Party 2 - After Hours" />
           <div class="game-title">Gold Party 2 - After Hours</div>
         </div>
 
-        <div class="game" data-link="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysaztecgm&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F">
+        <!-- Game 4 -->
+        <div class="game" onclick="window.open('https://bahisbu260.com/tr/game/pragmatic/fortune-of-aztec?demo=true', '_blank')">
           <img src="https://i.imgur.com/2qYDs97.png" alt="Fortune Of Aztec" />
           <div class="game-title">Fortune Of Aztec</div>
         </div>
 
-        <div class="game" data-link="https://demogamesfree.pragmaticplay.net/gs2c/html5Game.do?extGame=1&symbol=vs20alieninv&gname=Alien%20Invaders&jurisdictionID=99&mgckey=stylename@generic~SESSION@ac0d3818-097d-4105-abba-c24356b1f3ba">
+        <!-- Game 5 -->
+        <div class="game" onclick="window.open('https://bahisbu260.com/tr/game/pragmatic/alien-invaders?demo=true', '_blank')">
           <img src="https://i.imgur.com/bbVLKCC.png" alt="Alien Invaders" />
           <div class="game-title">Alien Invaders</div>
         </div>
 
-        <div class="game" data-link="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20bigmass&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F">
+        <!-- Game 6 -->
+        <div class="game" onclick="window.open('https://bahisbu260.com/tr/game/pragmatic/waves-of-poseidon?demo=true', '_blank')">
           <img src="https://i.imgur.com/xGOKnYd.png" alt="Waves of Poseidon" />
           <div class="game-title">Waves of Poseidon</div>
         </div>
 
-        <div class="game" data-link="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20gemfirefor&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Ftr%2F">
+	<!-- Game 7 -->
+        <div class="game" onclick="window.open('https://bahisbu260.com/tr/game/pragmatic/gem-fire-fortune?demo=true', '_blank')">
           <img src="https://i.imgur.com/SXUDnBg.png" alt="Gem Fire Fortune" />
           <div class="game-title">Gem Fire Fortune</div>
         </div>
 
-        <div class="game" data-link="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25pfarmfp&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Ftr%2F">
+	<!-- Game 8 -->
+        <div class="game" onclick="window.open('https://bahisbu260.com/tr/game/pragmatic/pig-farm?demo=true', '_blank')">
           <img src="https://i.imgur.com/AviKOj5.png" alt="Pig Farm" />
           <div class="game-title">Pig Farm</div>
         </div>
@@ -295,18 +300,9 @@
       });
     }
 
+    // Popup otomatik açılır
     window.addEventListener('load', () => {
       document.getElementById('popup').style.display = 'flex';
-
-      // Tüm oyunlara tıklama eventi ekle
-      document.querySelectorAll('.game').forEach(item => {
-        item.addEventListener('click', () => {
-          const url = item.getAttribute('data-link');
-          if (url) {
-            window.open(url, '_blank', 'noopener,noreferrer');
-          }
-        });
-      });
     });
 
     function closePopup() {
