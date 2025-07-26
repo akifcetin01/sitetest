@@ -49,6 +49,30 @@
       text-decoration: underline;
     }
 
+    .filter-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 10px 0;
+      flex-wrap: wrap;
+    }
+
+    .filter-buttons button {
+      padding: 8px 16px;
+      border: none;
+      background-color: #ffda58;
+      color: #000;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .filter-buttons button.selected,
+    .filter-buttons button:hover {
+      background-color: #ffc107;
+    }
+
     .search-box {
       margin-bottom: 15px;
       text-align: center;
@@ -85,7 +109,7 @@
       flex: 1;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 0px;
+      gap: 10px;
       justify-items: center;
       align-items: start;
     }
@@ -202,6 +226,13 @@
       BAHİSBU GİRİŞ
     </div>
 
+    <!-- Kategori Butonları -->
+    <div class="filter-buttons">
+      <button data-category="all" class="selected" onclick="selectCategory(this)">Tümü</button>
+      <button data-category="ruby" onclick="selectCategory(this)">Ruby Play</button>
+      <button data-category="pragmatic" onclick="selectCategory(this)">Pragmatic Play</button>
+    </div>
+
     <!-- Arama Kutusu -->
     <div class="search-box">
       <input type="text" id="searchInput" placeholder="Oyun ara..." onkeyup="filterGames()">
@@ -219,50 +250,84 @@
       <!-- Games -->
       <div class="games" id="gamesList">
 
-        <!-- Game 1 -->
-        <div class="game" onclick="window.open('https://bahisbu260.com/tr/game/pragmatic/gates-of-olympus-super-scatter?demo=true', '_blank')">
+         <!-- Ruby Play Games -->
+
+	 <div class="game" data-category="ruby" onclick="window.open('https://bahisbu266.com/tr/game/ruby-play/diamond-explosion-7s-se?demo=true', '_blank')">
+      <img src="https://i.imgur.com/9vMo0Nk.gif" alt="Diamond Explosion 7s" />
+      <div class="game-title">Diamond Explosion 7s</div>
+    </div>
+
+	<div class="game" data-category="ruby" onclick="window.open('https://bahisbu266.com/tr/game/ruby-play/mad-hit-marlin-bonanza?demo=true', '_blank')">
+          <img src="https://i.imgur.com/piGQmZb.gif" alt="Mad Hit Marlin Bonanza" />
+          <div class="game-title">Mad Hit Marlin Bonanza</div>
+	</div>
+
+        <div class="game" data-category="ruby" onclick="window.open('https://bahisbu266.com/tr/game/ruby-play/ancient-pharoah?demo=true', '_blank')">
+          <img src="https://i.imgur.com/c0y6tTU.gif" alt="Ancient Pharoah" />
+          <div class="game-title">Ancient Pharoah</div>
+    </div>    
+
+        <div class="game" data-category="ruby" onclick="window.open('https://bahisbu266.com/tr/game/ruby-play/savannah-mad-hit?demo=true', '_blank')">
+          <img src="https://i.imgur.com/ETo78fQ.gif" alt="Mad Hit Savannah" />
+          <div class="game-title">Mad Hit Savannah</div>
+  </div>      
+
+	<div class="game" data-category="ruby" onclick="window.open('https://bahisbu266.com/tr/game/ruby-play/giga-match-north-pole?demo=true', '_blank')">
+          <img src="https://i.imgur.com/pBRwZKn.gif" alt="Giga Match Fruits" />
+          <div class="game-title">Giga Match Fruits</div>
+   </div>     
+
+	<div class="game" data-category="ruby" onclick="window.open('https://bahisbu266.com/tr/game/ruby-play/ten-ton-ways-goldfish?demo=true', '_blank')">
+          <img src="https://i.imgur.com/vEWPmV7.gif" alt="Ten Ton Ways Goldfish" />
+          <div class="game-title">Ten Ton Ways Goldfish</div>
+  </div>      
+
+	<div class="game" data-category="ruby" onclick="window.open('https://bahisbu266.com/tr/game/ruby-play/ten-ton-ways-goldfish?demo=true', '_blank')">
+          <img src="https://i.imgur.com/dnfOs81.gif" alt="Immortal Ways Cleopatra" />
+          <div class="game-title">Immortal Ways Cleopatra</div>
+</div>        
+
+	<div class="game" data-category="ruby" onclick="window.open('https://bahisbu266.com/tr/game/ruby-play/go-high-gallina?demo=true', '_blank')">
+          <img src="https://i.imgur.com/gqOXGZi.gif" alt="Go High Gallina" />
+          <div class="game-title">Go High Gallina</div>
+</div>
+                <!-- Pragmatic Games -->
+        <div class="game" data-category="pragmatic" onclick="window.open('https://bahisbu266.com/tr/game/pragmatic/gates-of-olympus-super-scatter?demo=true', '_blank')">
           <img src="https://i.imgur.com/Vg6OJU9.png" alt="Gates of Olympus Super Scatter" />
           <div class="game-title">Gates of Olympus Super Scatter</div>
         </div>
 
-        <!-- Game 2 -->
-        <div class="game" onclick="window.open('https://bahisbu260.com/tr/game/pragmatic/club-tropicana?demo=true', '_blank')">
+        <div class="game" data-category="pragmatic" onclick="window.open('https://bahisbu266.com/tr/game/pragmatic/club-tropicana?demo=true', '_blank')">
           <img src="https://i.imgur.com/XzTu60o.png" alt="Club Tropicana - Happy Hour" />
           <div class="game-title">Club Tropicana - Happy Hour</div>
         </div>
 
-        <!-- Game 3 -->
-        <div class="game" onclick="window.open('https://bahisbu260.com/tr/game/pragmatic/gold-party-2-after-hours?demo=true', '_blank')">
+        <div class="game" data-category="pragmatic" onclick="window.open('https://bahisbu266.com/tr/game/pragmatic/gold-party-2-after-hours?demo=true', '_blank')">
           <img src="https://i.imgur.com/UilKjXi.png" alt="Gold Party 2 - After Hours" />
           <div class="game-title">Gold Party 2 - After Hours</div>
         </div>
 
-        <!-- Game 4 -->
-        <div class="game" onclick="window.open('https://bahisbu260.com/tr/game/pragmatic/fortune-of-aztec?demo=true', '_blank')">
+        <div class="game" data-category="pragmatic" onclick="window.open('https://bahisbu266.com/tr/game/pragmatic/fortune-of-aztec?demo=true', '_blank')">
           <img src="https://i.imgur.com/2qYDs97.png" alt="Fortune Of Aztec" />
           <div class="game-title">Fortune Of Aztec</div>
         </div>
 
-        <!-- Game 5 -->
-        <div class="game" onclick="window.open('https://bahisbu260.com/tr/game/pragmatic/alien-invaders?demo=true', '_blank')">
+        <div class="game" data-category="pragmatic" onclick="window.open('https://bahisbu266.com/tr/game/pragmatic/alien-invaders?demo=true', '_blank')">
           <img src="https://i.imgur.com/bbVLKCC.png" alt="Alien Invaders" />
           <div class="game-title">Alien Invaders</div>
         </div>
 
-        <!-- Game 6 -->
-        <div class="game" onclick="window.open('https://bahisbu260.com/tr/game/pragmatic/waves-of-poseidon?demo=true', '_blank')">
+        <div class="game" data-category="pragmatic" onclick="window.open('https://bahisbu266.com/tr/game/pragmatic/waves-of-poseidon?demo=true', '_blank')">
           <img src="https://i.imgur.com/xGOKnYd.png" alt="Waves of Poseidon" />
           <div class="game-title">Waves of Poseidon</div>
         </div>
 
-	<!-- Game 7 -->
-        <div class="game" onclick="window.open('https://bahisbu260.com/tr/game/pragmatic/gem-fire-fortune?demo=true', '_blank')">
+        <div class="game" data-category="pragmatic" onclick="window.open('https://bahisbu266.com/tr/game/pragmatic/gem-fire-fortune?demo=true', '_blank')">
           <img src="https://i.imgur.com/SXUDnBg.png" alt="Gem Fire Fortune" />
           <div class="game-title">Gem Fire Fortune</div>
         </div>
 
-	<!-- Game 8 -->
-        <div class="game" onclick="window.open('https://bahisbu260.com/tr/game/pragmatic/pig-farm?demo=true', '_blank')">
+        <div class="game" data-category="pragmatic" onclick="window.open('https://bahisbu266.com/tr/game/pragmatic/pig-farm?demo=true', '_blank')">
           <img src="https://i.imgur.com/AviKOj5.png" alt="Pig Farm" />
           <div class="game-title">Pig Farm</div>
         </div>
@@ -290,17 +355,26 @@
 
   <!-- JavaScript -->
   <script>
+    function selectCategory(btn) {
+      document.querySelectorAll(".filter-buttons button").forEach(b => b.classList.remove("selected"));
+      btn.classList.add("selected");
+      filterGames();
+    }
+
     function filterGames() {
       const input = document.getElementById("searchInput").value.toLowerCase();
+      const selectedCategory = document.querySelector(".filter-buttons .selected").dataset.category;
       const games = document.querySelectorAll(".game");
 
       games.forEach(game => {
         const title = game.querySelector(".game-title").innerText.toLowerCase();
-        game.style.display = title.includes(input) ? "block" : "none";
+        const gameCategory = game.getAttribute("data-category");
+        const matchesCategory = (selectedCategory === "all" || gameCategory === selectedCategory);
+        const matchesSearch = title.includes(input);
+        game.style.display = (matchesCategory && matchesSearch) ? "block" : "none";
       });
     }
 
-    // Popup otomatik açılır
     window.addEventListener('load', () => {
       document.getElementById('popup').style.display = 'flex';
     });
